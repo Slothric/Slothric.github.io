@@ -1,0 +1,64 @@
+/* CSS file for portfolio */
+
+/* padding definitions */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* navbar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position - This line is currently causing the navbar to not appear on the page*/
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* hero bg image */
+.bgimage {
+  height: 100vh;
+  background: url('images/hero_header.jpg');
+  background-size: cover;
+  position: relative;
+}
+/* hero header text */
+.hero_title {
+  font-size: 4.5rem;
+}
+.hero_desc {
+  font-size: 2rem;
+}
+.hero_text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* give text an outline. only works this way up to 1px outline size */
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}

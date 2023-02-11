@@ -1,0 +1,61 @@
+<!-- HTML file for portfolio -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- hero header -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- does this have a crazy name to be reactive for smaller devices maybe? -->
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <div class="hero_text">
+              <h2 class="hero_title">Hey, I'm Adam.</h2>
+              <p class="hero_desc">
+                I am a full stack developer and Computer Scientist.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- navbar -->
+    <!-- navbar is placed after hero header for now because the element needs to be loaded in front of the hero image, and this is how
+          I determined to do it for the moment -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Adam</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Services">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
