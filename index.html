@@ -28,10 +28,12 @@
     <!-- navbar -->
     <!-- navbar is placed after hero header for now because the element needs to be loaded in front of the hero image, and this is how
           I determined to do it for the moment -->
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+    <!-- old nav class name: navbar navbar-expand-lg fixed-top navbarScroll -->
+    <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Adam</a>
-        <button
+        <!-- nulling toggler button because it was creating a dot on screen -->
+        <a class="navbar-brand" href="#name">Adam</a>
+        <!-- <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -41,14 +43,25 @@
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto">
+            <!-- moved 'Adam' button down here, but it does not seem necessary for inline buttons
+                  may still be better than original positioning because it may make more sense -->
+            <!-- <li class="nav-item active">
+              <a class="navbar-brand" href="#name">Adam</a>
+            </li> -->
             <li class="nav-item active">
               <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item active">
               <a class="nav-link" href="#Services">Services</a>
-              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#Contact">Contact</a>
             </li>
           </ul>
         </div>
