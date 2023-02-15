@@ -42,7 +42,7 @@
 }
 
 /* hero bg image */
-.bgimage {
+.herobgimage {
   height: 100vh;
   background: url('images/hero_header.jpg');
   background-size: cover;
@@ -65,4 +65,12 @@
   /* give text an outline. only works this way up to 1px outline size */
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+/* about bg image */
+.aboutbgimage {
+  width: 100%;
+  height: 25vh;
+  background: url('images/about.jpg');
+  background-position: bottom;
 }
