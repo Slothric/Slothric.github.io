@@ -68,9 +68,9 @@
 }
 
 /* about bg image */
-/* .aboutbgimage {
+.aboutbgimage {
   width: 100%;
   height: 25vh;
   background: url('images/about.jpg');
   background-position: bottom;
-} */
+}
