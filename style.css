@@ -69,8 +69,10 @@
 
 /* about bg image */
 .aboutbgimage {
-  width: 50%;
-  height: 75vh;
+  /* width: 40%; */
+  /* height: 115vh; */
+  width: 15%;
+  aspect-ratio: auto;
   background: url('images/about.jpg');
   background-position: bottom;
 }
