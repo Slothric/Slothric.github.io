@@ -11,158 +11,102 @@
   <body>
     <!-- hero header -->
     <section class="herobgimage" id="home">
-      <div class="container-fluid">
-        <div class="row">
-          <!-- does this have a crazy name to be reactive for smaller devices maybe? no, I'm pretty sure its for bootstrap -->
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <div class="hero_text">
-              <h2 class="hero_title">Hey, I'm Adam.</h2>
-              <p class="hero_desc">
-                I am a full stack developer and Computer Scientist.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="hero_text">
+        <h2 class="hero_title">Hey, I'm Adam.</h2>
+        <p class="hero_desc">
+          I am a full stack developer and Computer Scientist.
+        </p>
       </div>
     </section>
 
     <!-- navbar -->
-    <!-- navbar is placed after hero header for now because the element needs to be loaded in front of the hero image, and this is how
-          I determined to do it for the moment -->
-    <!-- old nav class name: navbar navbar-expand-lg fixed-top navbarScroll -->
     <nav class="navbar">
-      <div class="container">
-        <!-- nulling toggler button because it was creating a dot on screen -->
-        <!-- I don't even know if I want my name there -->
-        <!-- <a class="navbar-brand" href="#name">Adam</a> -->
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <!-- moved 'Adam' button down here, but it does not seem necessary for inline buttons
-                  may still be better than original positioning because it may make more sense -->
-            <!-- <li class="nav-item active">
-              <a class="navbar-brand" href="#name">Adam</a>
-            </li> -->
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+      <!-- review the classes here and refine them -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <!-- review secondary class item'active' -->
+          <li class="nav-item active">
+            <a class="navbar-brand" href="#name">Adam</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
     <!-- about section -->
-    <!-- image currently not working -->
     <section id="about">
-      <div class="container mt-4 pt-4">
-        <h1 class="text-center">About Me</h1>
-        <div class="row mt-4">
-          <div class="col lg-4">
-            <img src="images/about.jpg" class="aboutbgimage" alt="" />
-          </div>
+      <h1 class="text-center">About Me</h1>
+      <img src="images/about.jpg" class="aboutbgimage" alt="" />
 
-          <div class="col-lg-8">
-            <p>
-              My name is Adam, and I'm a frontend/full stack developer who has
-              wings. Test to see deployment time
-            </p>
-            <div class="row mt-3">
-              <div class="col-md-6">
-                <ul>
-                  <li>Name: Adam</li>
-                  <li>Age: 23</li>
-                  <li>Occupation: Frontend/FullStack Engineer</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <ul>
-                  <li>Eating: Chocolate</li>
-                  <li>Likes: Bouldering</li>
-                  <li>Potato: Potahto</li>
-                </ul>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <p>
-                I would like more than anything to travel and spread my wings
-                while being able to do the work that I take pride in.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p>
+        My name is Adam, and I'm a frontend/full stack developer who has wings.
+      </p>
+
+      <ul>
+        <li>Name: Adam</li>
+        <li>Age: 23</li>
+        <li>Occupation: Frontend/FullStack Engineer</li>
+      </ul>
+      <ul>
+        <li>Eating: Chocolate</li>
+        <li>Likes: Bouldering</li>
+        <li>Potato: Potahto</li>
+      </ul>
+
+      <p>
+        I would like more than anything to travel while being able to do work
+        that I take pride in.
+      </p>
     </section>
 
     <!-- services section -->
-    <!-- not appearing as cards yet -->
     <section id="services">
-      <div class="container">
-        <h1 class="text-center">Services</h1>
-        <div class="row">
-          <div class="col-lg-4 mt-4">
-            <div class="card servicesText">
-              <div class="card-body">
-                <i class="fas servicesIcon fa-clock"></i>
-                <h4 class="card-title mt-3">Website Development</h4>
-                <p class="card-text mt-3">Example service description here</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card servicesText">
-              <div class="card-body">
-                <i class="fas servicesIcon fa-clock"></i>
-                <h4 class="card-title mt-3">Website Deployment</h4>
-                <p class="card-text mt-3">Example service description here</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card servicesText">
-              <div class="card-body">
-                <i class="fas servicesIcon fa-clock"></i>
-                <h4 class="card-title mt-3">SEO</h4>
-                <p class="card-text mt-3">Example service description here</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card servicesText">
-              <div class="card-body">
-                <i class="fas servicesIcon fa-clock"></i>
-                <h4 class="card-title mt-3">DevOps</h4>
-                <p class="card-text mt-3">Example service description here</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card servicesText">
-              <div class="card-body">
-                <i class="fas servicesIcon fa-clock"></i>
-                <h4 class="card-title mt-3">Quality Assurance</h4>
-                <p class="card-text mt-3">Example service description here</p>
-              </div>
-            </div>
-          </div>
+      <h1 class="text-center">Services</h1>
+      <!-- review secondary class 'servicesText' and all other secondary classes here -->
+      <div class="card servicesText">
+        <div class="card-body">
+          <i class="fas servicesIcon fa-clock"></i>
+          <h4 class="card-title">Website Development</h4>
+          <p class="card-text">Example service description here</p>
+        </div>
+      </div>
+      <div class="card servicesText">
+        <div class="card-body">
+          <i class="fas servicesIcon fa-clock"></i>
+          <h4 class="card-title">Website Deployment</h4>
+          <p class="card-text">Example service description here</p>
+        </div>
+      </div>
+      <div class="card servicesText">
+        <div class="card-body">
+          <i class="fas servicesIcon fa-clock"></i>
+          <h4 class="card-title">SEO</h4>
+          <p class="card-text">Example service description here</p>
+        </div>
+      </div>
+      <div class="card servicesText">
+        <div class="card-body">
+          <i class="fas servicesIcon fa-clock"></i>
+          <h4 class="card-title">DevOps</h4>
+          <p class="card-text">Example service description here</p>
+        </div>
+      </div>
+      <div class="card servicesText">
+        <div class="card-body">
+          <i class="fas servicesIcon fa-clock"></i>
+          <h4 class="card-title">Quality Assurance</h4>
+          <p class="card-text">Example service description here</p>
         </div>
       </div>
     </section>
