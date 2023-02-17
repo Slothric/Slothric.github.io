@@ -84,8 +84,16 @@ body {
 #about {
   color: white; /*set text color to white for all of about*/
 }
+#about > p {
+  text-align: center;
+}
+#about > ul li {
+  text-align: center;
+  list-style-position: inside;
+  vertical-align: middle;
+}
 .aboutbgimage {
-  width: 15%;
+  width: 20%;
   aspect-ratio: auto;
   background: url('images/about.jpg');
   background-position: bottom;
@@ -97,7 +105,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  max-width: 916px;
+  /* max-width: 1860px; */
   width: calc(100% - 20px);
 }
 .card-body {
