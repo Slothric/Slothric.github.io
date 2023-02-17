@@ -1,10 +1,23 @@
 /* CSS file for portfolio */
 
+/* root to define overall vars and stuff. for now just --bg-color */
+:root {
+  --bg-color: rgb(50, 50, 35);
+}
+
 /* padding definitions */
-* {
+/* may not need this one */
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+} */
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* navbar */
@@ -67,12 +80,33 @@
     1px 1px 0 #000;
 }
 
-/* about bg image */
+/* about */
+#about {
+  color: white; /*set text color to white for all of about*/
+}
 .aboutbgimage {
-  /* width: 40%; */
-  /* height: 115vh; */
   width: 15%;
   aspect-ratio: auto;
   background: url('images/about.jpg');
   background-position: bottom;
+}
+
+/* services */
+#services {
+  color: white; /*set text color to white for all of services*/
+}
+.card-body {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  height: 260px;
+  width: 300px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 916px;
+  gap: 8px;
+  width: calc(100% - 20px);
 }
